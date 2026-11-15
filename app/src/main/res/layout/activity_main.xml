@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0F6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SweetSlice"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#C2185B"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sweetness in Every Order!"
+            android:textSize="16sp"
+            android:textColor="#795064"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Favourite Cake"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#8E174B" />
+
+        <Spinner
+            android:id="@+id/spCake"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:id="@+id/imgCake"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chocolate_cake"
+            android:contentDescription="Selected cake image"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvCakePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: Rs. 3500"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#C2185B"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter quantity"
+            android:inputType="number"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Date"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etDeliveryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Example: 2026-11-20"
+            android:inputType="text"
+            android:layout_marginBottom="18dp" />
+
+        <Button
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Cake Order"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D81B60" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#287A42"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnViewOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View My Orders"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8E174B"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>
